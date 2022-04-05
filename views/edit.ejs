@@ -31,7 +31,9 @@
             <input type="text" value="<%= todo.title %>" name="title" />
             <input type="hidden" value="<%= todo.id %>" name="id" />
             <button type="submit">Confirm</button>
-            <a href="/main" class="cancel">Cancel</a>
+            <button class="cancel-button">
+              <a href="/main" class="cancel-text">Cancel</a>
+            </button>
           </form>
         </li>
         <% } else { %>
