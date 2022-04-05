@@ -1,6 +1,7 @@
 # health-plaza-quiz
 
 ### Installation
+ - clone the project
  - cd to the project
  - yarn install
  -  run "yarn run sever"
