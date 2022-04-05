@@ -69,8 +69,8 @@ app.post("/update_todo", (req, res) => {
 app.post("/delete", (req, res) => {
   var { id } = req.body;
   id = Number(id);
-  var target = todoList.filter((todo) => todo.id === id)[0];
 
+  var target = todoList.filter((todo) => todo.id === id)[0];
   if (!target) return res.status(400).json({ error: "todo not found" });
 
   todoList = todoList.filter((todo) => todo.id !== id);
