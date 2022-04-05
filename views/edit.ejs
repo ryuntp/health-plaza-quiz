@@ -2,7 +2,10 @@
 <head>
   <title>Todo List</title>
   <link rel="stylesheet" href="/static/stylesheets/style.css" type="text/css" />
-  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Candal|Chewy&display=swap"
+    rel="stylesheet"
+  />
   <link
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -17,7 +20,9 @@
     <div class="todo">
       <form action="/add_todo" method="POST" class="todo-header">
         <input type="text" name="title" />
-        <button type="submit" class="add_button"><span class="fas fa-plus">Add task</span></button>
+        <button type="submit" class="add_button">
+          <span class="fas fa-plus"> Add task</span>
+        </button>
       </form>
       <ul class="todo-list">
         <% todoList.forEach(todo => { %> <% if (todo.id == idTask) { %>
